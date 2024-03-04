@@ -2,11 +2,11 @@
 const SONG_FILE = "Lied.mp3";
 
 // Gesamtzeit / Beginn des Countdowns:
+const TIME_LENGTH = 72; // Sekunden
 // (Empfehlung: Wähle die Länge des Liedes)
-const TIME_LENGTH = 72; // seconds
 
-// Zeit pro Bild (das erste Bild kann bisschen länger sein):
-const TIME_PER_PIC = 5; // seconds
+// Zeit pro Bild in Sekunden (das erste Bild kann bisschen länger sein):
+const TIME_PER_PIC = 5; // Sekunden
 
 // Pfad zu den Bildern:
 const PATH_TO_PICS = "Bilder/";
@@ -14,8 +14,9 @@ const PATH_TO_PICS = "Bilder/";
 // Das Bildformat, auf das JEDES Bild im Ordner "Bilder/" enden MUSS:
 const PIC_FORMAT = "jpg";
 
-// Schriftgröße (empfohlen: "9vw"):
+// Schriftgröße:
 const FONT_SIZE = "9vw";
+// (Empfehlung: "9vw")
 
 // Einheit für Minuten:
 const UNIT_MINUTE = "m";
