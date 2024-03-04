@@ -1,4 +1,4 @@
-# Countdown mit Diashow - EC Edition
+# Countdown mit Diashow - SWDEC Edition
 
 Diese Vorlage bietet einen einstellbaren Countdown mit individueller Diashow und möglicher Musik im Hintergrund. Damit eignet sie sich perfekt für den Beginn von Veranstaltungen wie beispielsweise Gottesdienste. In dieser Vorlage wird das Corporate Design des [SWDEC](https://swdec.de/) eingehalten. (Um eine allgemeingültige Vorlage zu erhalten, gibt es [hier](https://github.com/TBen2000/Countdown-with-Slideshow) eine weitere Vorlage.)
 
