@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+
+<head>
+    <title>Countdown</title>
+    <style>
+        @font-face {
+            font-family: montserrat;
+            src: url(Schriftarten_und_Skripte/Montserrat-Light_EC-Edition.otf);
+        }
+
+        @font-face {
+            font-family: glossAndBloom;
+            src: url(Schriftarten_und_Skripte/Gloss_And_Bloom.ttf);
+        }
+
+        body {
+            -webkit-touch-callout: none;
+            -webkit-user-select: none;
+            -khtml-user-select: none;
+            -moz-user-select: none;
+            -ms-user-select: none;
+            user-select: none;
+
+            background-color: black;
+        }
+
+        .bg-image {
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .bg-image,
+        .countdown {
+            transition: opacity 1s;
+            -webkit-transition: opacity 1s;
+            -moz-transition: opacity 1s;
+            -o-transition: opacity 1s;
+        }
+
+        .countdown,
+        .clickToStart {
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+            width: 95%;
+            font-size: 9vw;
+            color: #F8F5F4;
+            text-align: center;
+            text-shadow: 0.3vw 0.3vw 0.8vw #282925, -0.2vw 0.3vw 1.5vw #282925;
+            font-family: glossAndBloom;
+        }
+
+        .clickToStart {
+            font-size: 2vw;
+            font-family: montserrat;
+        }
+    </style>
+
+    <audio></audio>
+
+    <script type="text/javascript" src="einstellungen.js"></script>
+    <script type="text/javascript" src="Schriftarten_und_Skripte/javascript.js"></script>
+</head>
+
+<body class="slide_photo">
+    <img id="bg-1" class="bg-image" style="opacity: 1;" draggable="false" src="Bild_Anfang.jpg">
+    <img id="bg-2" class="bg-image" style="opacity: 0;" draggable="false" src="Bild_Anfang.jpg">
+    <div id="countdown" class="countdown" style="opacity: 0;"></div>
+    <div id="clickToStart" class="clickToStart">Klicke oder drücke Enter zum Starten</div>
+</body>
+
+</html>
