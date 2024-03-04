@@ -7,6 +7,8 @@ Diese Vorlage bietet einen einstellbaren Countdown mit individueller Diashow und
 
 Die Vorlage ist in Form einer Webseite entwickelt, welche lokal im Browser ausgeführt werden kann. Zum Starten muss lediglich dieses Repository heruntergeladen („Code“ ⇾ „Download ZIP“), danach die heruntergeladene Datei entpackt und anschließend die Datei „Start.html“ in einem Browser der Wahl ausgeführt werden.
 
+> Tipp: Mit der Taste „F11“ lässt sich in den meisten Browsern der Vollbildmodus aktivieren. Damit sieht das Ganze wesentlich schöner aus.
+
 
 ## Anpassen
 
@@ -22,7 +24,7 @@ Auch das Lied im Hintergrund kann angepasst werden. Dafür muss lediglich die Au
 
 ### Weitere Einstellungen
 
-Sonstige Einstellungen lassen sich in der Datei „Einstellungen.js“ definieren. Es ist wichtig, diese Eintellungen anzupassen, um den Countdown zu individualisieren. Für das Format des Countdowns wird eine der beiden Einstellungen empfohlen:
+Sonstige Einstellungen lassen sich in der Datei „Einstellungen.js“ definieren. Es ist wichtig, diese Einstellungen anzupassen, um den Countdown zu individualisieren. Für das Format des Countdowns wird eine der beiden Einstellungen empfohlen:
 
 ```
 const UNIT_MINUTE = "m";
