@@ -21,9 +21,13 @@ function main() {
     audio.volume = 1;
     audio.play();
 
+    // set up custom CSS variables for countdown text (font size)
+    if (FONT_SIZE != "") {
+        document.querySelector(":root").style.setProperty("--font-size", FONT_SIZE);
+    }
+
     // set up first screen
-    setBackground(getPathToPicture(PATH_TO_PICS, currentPictureNumber, PIC_FORMAT));
-    document.getElementById("countdown").style.fontSize = FONT_SIZE;
+    setBackground(getPathToPicture(currentPictureNumber));
     document.getElementById("countdown").style.opacity = "1";
 
     // start countdown
@@ -96,9 +100,9 @@ function nextBackground() {
         setBackground("Bild_Ende.jpg");
     }
     else {
-        setBackground(getPathToPicture(PATH_TO_PICS, currentPictureNumber, PIC_FORMAT));
+        setBackground(getPathToPicture(currentPictureNumber));
         currentPictureNumber += 1;
-        preloadImage(getPathToPicture(PATH_TO_PICS, currentPictureNumber, PIC_FORMAT));
+        preloadImage(getPathToPicture(currentPictureNumber));
     }
 }
 
@@ -122,8 +126,8 @@ function switchBackgroundOpacity() {
 }
 
 
-function getPathToPicture(directory, name, format) {
-    return directory + name + "." + format;
+function getPathToPicture(name) {
+    return PATH_TO_PICS + name + "." + PIC_FORMAT;
 }
 
 
