@@ -139,7 +139,7 @@ function getNextBackgroundID() {
         return 2;
     }
 
-    throw new Error("Function getNextBackgroundID(value) can just handle 1 and 2 as parameter values!");
+    throw new Error("Function getNextBackgroundID() can just handle 1 and 2 as values for parameter currentBackgroundID!");
 }
 
 
@@ -151,7 +151,7 @@ function bitSwitch(bitValue) {
         return 1;
     }
 
-    throw new Error("Function bitSwitch(value) can just handle 0 and 1 as parameter values!");
+    throw new Error("Function bitSwitch(bitValue) can just handle 0 and 1 as parameter values!");
 }
 
 
